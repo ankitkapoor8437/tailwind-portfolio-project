@@ -1,6 +1,6 @@
 import React from 'react'
-import heroImage from '../../assets/images/hero.svg'
-import CountUp from 'react-countup';
+// import heroImage from '../../assets/images/hero.svg'
+// import CountUp from 'react-countup';
 
 
 const Hero = () => {
