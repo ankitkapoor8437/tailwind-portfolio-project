@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import data from '../../assets/data/portfolioData'
-import { useEffec, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const Portfolio = () => {
   const [nextItems, setNextItems] = useState(6);
