@@ -90,6 +90,7 @@ const Portfolio = () => {
           }
         </div>
 
+        {/* Reset Button */}
         <div className="text-center mt-6">
           {
             nextItems < portfolios.length && data.length > 6 && (
