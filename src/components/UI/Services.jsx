@@ -48,7 +48,8 @@ const Services = () => {
                                                     Frontend Development
                                                 </h3>
                                                 <p className='text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7 ' >
-                                                    As a web developer, I possess a range of technical skills necessary to build and maintain websites. I have expertise in HTML, CSS, and JavaScript, which allows me to create engaging and interactive web pages. My knowledge of CSS frameworks like Bootstrap and Tailwind CSS enables me to create engaging designs efficiently.                                                </p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolorem molestias maiores quae beatae magnam.
+                                                </p>
                                             </div>
                                         </div>
 
@@ -75,7 +76,8 @@ const Services = () => {
                                                     UI/UX Design
                                                 </h3>
                                                 <p className='text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7 ' >
-                                                    I possess a strong understanding of user-centered design principles and have experience in creating intuitive and visually appealing user interfaces for various digital platforms. My proficiency in design tools like Sketch, Figma, and Adobe Creative Suite enables me to create wireframes, prototypes, and high-fidelity mockups efficiently. I also have experience in conducting user research, usability testing, and iterating designs based on user feedback.                                                </p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolorem molestias maiores quae beatae magnam.
+                                                </p>
                                             </div>
                                         </div>
 
@@ -102,7 +104,8 @@ const Services = () => {
                                                     Backend Development
                                                 </h3>
                                                 <p className='text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7 ' >
-                                                    As a web developer, I possess a range of technical skills necessary to build and maintain websites. I have expertise in HTML, CSS, and JavaScript, which allows me to create engaging and interactive web pages. My knowledge of CSS frameworks like Bootstrap and Tailwind CSS enables me to create engaging designs efficiently.                                                </p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolorem molestias maiores quae beatae magnam.
+                                                </p>
                                             </div>
                                         </div>
 
@@ -129,7 +132,8 @@ const Services = () => {
                                                     Application Development
                                                 </h3>
                                                 <p className='text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7 ' >
-                                                    I have experience in using several web frameworks, including Django, Flask, and Express.js. I am proficient in building RESTful APIs, handling database operations, and implementing user authentication and authorization using these frameworks. Additionally, I have a good understanding of frontend frameworks like React, enabling me to create full-stack web applications.                                                </p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolorem molestias maiores quae beatae magnam.
+                                                </p>
                                             </div>
                                         </div>
 
