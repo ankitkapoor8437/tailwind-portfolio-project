@@ -1,14 +1,26 @@
 import React from 'react'
-import data from '../../assets/data/portfolioData'
 import { useEffect, useState } from 'react'
+import data from '../../assets/data/portfolioData'
+// Model Section
+import Modal from './Modal'
 
 const Portfolio = () => {
+  // Porfolio Section
   const [nextItems, setNextItems] = useState(6);
   const [portfolios, setPortfolios] = useState(data);
   const [selectTab, setSelectTab] = useState("all");
 
+  // Modal Section
+  const [showModal, setShowModal] = useState(false);
+  const [activeID, setActiveID] = useState(null);
+
   const loadMoreHandler = () => {
     setNextItems(prev => prev + 3)
+  }
+
+  const showModalHandler = (id) => {
+    setShowModal(true);
+    setActiveID(id);
   }
 
   useEffect(() => {
@@ -68,7 +80,7 @@ const Portfolio = () => {
                 <div className="w-full h-full bg-primaryColor bg-opacity-40 absolute top-0 left-0 z-[5]
                    hidden group-hover:block">
                   <div className="w-full h-full flex items-center justify-center">
-                    <button className="text-white bg-headingColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-[500] ease-in duration-200" >
+                    <button onClick={() => showModalHandler(portfolio.id)} className="text-white bg-headingColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-[500] ease-in duration-200" >
                       See Detials
                     </button>
                   </div>
@@ -82,7 +94,7 @@ const Portfolio = () => {
           {
             nextItems < portfolios.length && data.length > 6 && (
 
-              <button className="text-white bg-headingColor hover:bg-smallTextColor py-2 px-4 rounded-[8px]
+              <button className="text-white bg-primaryColor bg-headingColor hover:bg-smallTextColor py-2 px-4 rounded-[8px]
               font-[500] ease-in duration-200" onClick={loadMoreHandler}>
                 Load More
               </button>
@@ -90,6 +102,7 @@ const Portfolio = () => {
           }
         </div>
       </div>
+      {showModal && <Modal setShowModal={setShowModal} activeID={activeID} />}
     </section>
   )
 }
