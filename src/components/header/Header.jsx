@@ -23,7 +23,7 @@ const Header = () => {
 
           {/* Menu Start */}
           <div className='menu'>
-            <ul className='flex  items-center gap-10'>
+            <ul className='flex  items-center gap-10 '>
               {
                 menuItems.map(({ url, display }) => (
                   <li >

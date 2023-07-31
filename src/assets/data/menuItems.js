@@ -4,19 +4,19 @@ const menuItems = [
         display: 'Home'
     },
     {
-        url: '/about',
+        url: '/#about',
         display: 'About'
     },
     {
-        url: '/services',
+        url: '/#services',
         display: 'Service'
     },
     {
-        url: '/portfolio',
+        url: '/#portfolio',
         display: 'Portfolio'
     },
     {
-        url: '/contact',
+        url: '#/contact',
         display: 'Contact'
     },
 ]
