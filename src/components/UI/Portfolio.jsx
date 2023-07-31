@@ -40,8 +40,6 @@ const Portfolio = () => {
 
   }, [selectTab])
 
-
-
   return (
     <section id='portfolio'>
       <div className='container'>
