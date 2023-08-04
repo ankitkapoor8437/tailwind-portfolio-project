@@ -16,7 +16,7 @@ const menuItems = [
         display: 'Portfolio'
     },
     {
-        url: '#/contact',
+        url: '/#contact',
         display: 'Contact'
     },
 ]
