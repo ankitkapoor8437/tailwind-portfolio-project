@@ -47,8 +47,7 @@ const Services = () => {
                                                     Frontend Development
                                                 </h3>
                                                 <p className='text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7 ' >
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolorem molestias maiores quae beatae magnam.
-                                                </p>
+                                                    Crafting visually stunning and user-friendly interfaces, transforming ideas into immersive digital experiences with precision and creativity.                                                </p>
                                             </div>
                                         </div>
 
@@ -75,8 +74,7 @@ const Services = () => {
                                                     UI/UX Design
                                                 </h3>
                                                 <p className='text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7 ' >
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolorem molestias maiores quae beatae magnam.
-                                                </p>
+                                                    Weaving intuitive interfaces and seamless user experiences, blending artistry with functionality to create digital designs that captivate and engage.                                                </p>
                                             </div>
                                         </div>
 
@@ -103,8 +101,7 @@ const Services = () => {
                                                     Backend Development
                                                 </h3>
                                                 <p className='text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7 ' >
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolorem molestias maiores quae beatae magnam.
-                                                </p>
+                                                    Powering the digital world behind the scenes, architecting robust and scalable infrastructures to ensure smooth, secure, and efficient functioning of websites and applications.                                                </p>
                                             </div>
                                         </div>
 
@@ -128,11 +125,10 @@ const Services = () => {
                                                 data-aos-delay="50"
                                                 className='bg-white p-4 rounded shadow group hover:bg-primaryColor cursor-pointer ease-in duration-150'>
                                                 <h3 className='text-primaryColor font-700 mb-3 group-hover:text-white group-hover:font-[600] text-xl'>
-                                                    Application Development
+                                                    Full stack Development
                                                 </h3>
                                                 <p className='text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7 ' >
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolorem molestias maiores quae beatae magnam.
-                                                </p>
+                                                Seamless fusion of frontend elegance and backend robustness, delivering innovative, holistic digital solutions for enhanced user experiences and advanced functionality.                                                </p>
                                             </div>
                                         </div>
 
