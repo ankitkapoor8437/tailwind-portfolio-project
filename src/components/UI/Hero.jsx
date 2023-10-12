@@ -42,14 +42,14 @@ const Hero = () => {
                         </p>
 
                         {/* Follow me section */}
-                        <div className='flex items-center gap-9 mt-14' data-aos='fade-up' data-aos-duration='1800' data-aos-delay='200' >
+                        <div className='flex items-center gap-9 mt-14' data-aos='fade-up' data-aos-duration='1800' data-aos-delay='100' >
                             <span>
                                 Follow me:
                             </span>
                             {
                                 links.map(({ link, style }) => (
                                     <span >
-                                        <a href={link} className='text-smallTextColor text-[15px] font-[600]'>
+                                        <a href={link} className='text-smallTextColor text-[20px] font-[600]'>
                                             <i className={style}></i>
                                         </a>
                                     </span>
