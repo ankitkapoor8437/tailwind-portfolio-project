@@ -61,9 +61,9 @@ const Hero = () => {
 
 
                     {/* Image Section */}
-                    <div className='basis-1/3 mt-10 sm:mt-0'>
-                        <figure className='flex items-center justify-center'>
-                            <img src={heroImage} alt="" />
+                    <div className='basis-1/3 mt-10 sm:mt-0'> 
+                        <figure className='flex items-center justify-center  rounded-lg shadow-lg shadow-[#8873ef]	'>
+                            <img className=" rounded-lg" src={heroImage} alt="" />
                         </figure>
                     </div>
                     {/* Image Section End */}
