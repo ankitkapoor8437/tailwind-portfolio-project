@@ -23,11 +23,10 @@ const Contact = () => {
 
     const handleContactSubmit = async (e) => {
         e.preventDefault();
-        // console.log(contactData);
         // Perform form submission logic here, e.g., send contactData to the server
         try {
             const response = await Axios.post("https://portfolio-backend-qkhk.onrender.com/api/queries/", contactData);
-            // console.log(response.data);
+            console.log(response.status);
             setSubmitMessage("Data saved successfully!");
             setContactData({
                 name: '',
