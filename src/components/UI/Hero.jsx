@@ -1,5 +1,5 @@
 import React from 'react'
-import heroImage from '../../assets/images/main-image.jpeg'
+import heroImage from '../../assets/images/main-image.png'
 import CountUp from 'react-countup';
 import links from '../../assets/data/followLinks';
 import counters from '../../assets/data/counterDetails';
