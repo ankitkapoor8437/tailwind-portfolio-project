@@ -23,11 +23,11 @@ const Contact = () => {
 
     const handleContactSubmit = async (e) => {
         e.preventDefault();
-        
+        // console.log(contactData);
         // Perform form submission logic here, e.g., send contactData to the server
         try {
-            const response = await Axios.post("https://testing-backend-8yjx.onrender.com/api/queries", contactData);
-            console.log(response.data);
+            const response = await Axios.post("https://portfolio-backend-qkhk.onrender.com/api/queries/", contactData);
+            // console.log(response.data);
             setSubmitMessage("Data saved successfully!");
             setContactData({
                 name: '',
@@ -38,7 +38,7 @@ const Contact = () => {
             // Handle the response as needed
             setTimeout(() => {
                 setSubmitMessage("");
-            }, 3000);
+            }, 5000);
         } catch (error) {
             // Handle error
             console.error(error);
