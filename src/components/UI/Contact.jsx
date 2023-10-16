@@ -1,6 +1,50 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Axios from "axios";
+
 
 const Contact = () => {
+    const [contactData, setContactData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+    });
+
+    const [submitMessage, setSubmitMessage] = useState("");
+
+
+    const handleContactForm = (e) => {
+        const { name, value } = e.target;
+        setContactData({
+            ...contactData,
+            [name]: value
+        });
+    };
+
+    const handleContactSubmit = async (e) => {
+        e.preventDefault();
+        
+        // Perform form submission logic here, e.g., send contactData to the server
+        try {
+            const response = await Axios.post("https://testing-backend-8yjx.onrender.com/api/queries", contactData);
+            console.log(response.data);
+            setSubmitMessage("Data saved successfully!");
+            setContactData({
+                name: '',
+                email: '',
+                subject: '',
+                message: ''
+            });
+            // Handle the response as needed
+            setTimeout(() => {
+                setSubmitMessage("");
+            }, 3000);
+        } catch (error) {
+            // Handle error
+            console.error(error);
+        }
+    };
+
     return (
         <section id='contact' className='pb-16'>
             <div className='container'>
@@ -13,34 +57,56 @@ const Contact = () => {
                         </iframe>
                     </div>
 
-                    <div className="rounded-lg w-full mt-8 md:mt-0 md:w-1/2 sm:h-[450px] lg:flex items-center bg-primaryColor px-4
-                    lg:px-8 py-8  rounded-lg shadow-lg shadow-[#8873ef]">
-                        <form className='w-full'>
+
+                    {/* Contact Form */}
+                    <div className="rounded-lg w-full mt-8 md:mt-0 md:w-1/2 sm:h-[450px] lg:flex items-center bg-primaryColor px-4 lg:px-8 py-8 shadow-lg shadow-[#8873ef]">
+                        <form className='w-full' onSubmit={handleContactSubmit}>
                             <div className='mb-5'>
-                                <input type="text"
+                                <input
+                                    type="text"
+                                    name='name'
                                     placeholder='Enter your name'
-                                    className="w-full p-3 focus:outline-none rounded-[5px]" />
+                                    className="w-full p-3 focus:outline-none rounded-[5px]"
+                                    value={contactData.name}
+                                    onChange={handleContactForm}
+                                />
                             </div>
                             <div className='mb-5'>
-                                <input type="text"
+                                <input
+                                    type="email"
+                                    name='email'
                                     placeholder='Enter your email'
-                                    className="w-full p-3 focus:outline-none rounded-[5px]" />
+                                    className="w-full p-3 focus:outline-none rounded-[5px]"
+                                    value={contactData.email}
+                                    onChange={handleContactForm}
+                                />
                             </div>
                             <div className='mb-5'>
-                                <input type="text"
+                                <input
+                                    type="text"
+                                    name='subject'
                                     placeholder='Enter your subject'
-                                    className="w-full p-3 focus:outline-none rounded-[5px]" />
+                                    className="w-full p-3 focus:outline-none rounded-[5px]"
+                                    value={contactData.subject}
+                                    onChange={handleContactForm}
+                                />
                             </div>
                             <div className='mb-5'>
-                                <textarea type="text"
+                                <textarea
+                                    name='message'
                                     rows={3}
                                     placeholder='Enter your message'
-                                    className="w-full p-3 focus:outline-none rounded-[5px]" />
+                                    className="w-full p-3 focus:outline-none rounded-[5px]"
+                                    value={contactData.message}
+                                    onChange={handleContactForm}
+                                />
                             </div>
-                            <button className="w-full p-3 focus:outline-none rounded-[5px] bg-smallTextColor text-white hover:bg-headingColor
-                            text-center ease-linear duration-150">
+                            <button
+                                type="submit"
+                                className="w-full p-3 focus:outline-none rounded-[5px] bg-smallTextColor text-white hover:bg-headingColor text-center ease-linear duration-150">
                                 Send Message
                             </button>
+                            <span id="msg">{submitMessage}</span>
                         </form>
                     </div>
 
