@@ -16,7 +16,7 @@ const links = [
     },
     {
         display: "Instagram",
-        link: "https://www.instagram.com/itsallaboutkapoor/",
+        link: "https://www.instagram.com/codebydex/",
         style: "ri-instagram-line",
     },
 ]

@@ -93,7 +93,7 @@ const Portfolio = () => {
           {
             nextItems < portfolios.length && data.length > 6 && (
 
-              <button className="text-white bg-primaryColor bg-headingColor hover:bg-smallTextColor py-2 px-4 rounded-[8px]
+              <button className="text-white bg-primaryColor hover:bg-smallTextColor py-2 px-4 rounded-[8px]
               font-[500] ease-in duration-200" onClick={loadMoreHandler}>
                 Load More
               </button>

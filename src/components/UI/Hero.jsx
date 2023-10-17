@@ -49,7 +49,7 @@ const Hero = () => {
                             {
                                 links.map(({ link, style }) => (
                                     <span >
-                                        <a href={link} className='text-smallTextColor text-[20px] font-[600]'>
+                                        <a href={link} target="_blank" rel="noopener noreferrer" className='text-smallTextColor text-[20px] font-[600]'>
                                             <i className={style}></i>
                                         </a>
                                     </span>
