@@ -54,7 +54,7 @@ const Services = () => {
                                         <div className='rounded-full bg-primaryColor border-white border-4 w-10 h-10 absolute left-1/2 
                                         transform -translate-x-1/2 -translate-y-4 sm:translate-y-0 flex items-center justify-center'>
                                             <figure>
-                                                <img src={FrontEndImg} alt="" />
+                                                <img src={FrontEndImg} alt="Frontend Development" />
                                             </figure>
                                         </div>
                                     </div>
@@ -81,7 +81,7 @@ const Services = () => {
                                         <div className='rounded-full bg-primaryColor border-white border-4 w-10 h-10 absolute left-1/2 
                                         transform -translate-x-1/2 -translate-y-4 sm:translate-y-0 flex items-center justify-center'>
                                             <figure>
-                                                <img src={UXUI} alt="" />
+                                                <img src={UXUI} alt="UI/UX Design" />
                                             </figure>
                                         </div>
                                     </div>
@@ -108,7 +108,7 @@ const Services = () => {
                                         <div className='rounded-full bg-primaryColor border-white border-4 w-10 h-10 absolute left-1/2 
                                         transform -translate-x-1/2 -translate-y-4 sm:translate-y-0 flex items-center justify-center'>
                                             <figure>
-                                                <img src={BackEndImg} alt="" />
+                                                <img src={BackEndImg} alt="Backend Development" />
                                             </figure>
                                         </div>
                                     </div>
@@ -128,14 +128,14 @@ const Services = () => {
                                                     Full stack Development
                                                 </h3>
                                                 <p className='text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500] leading-7 ' >
-                                                Seamless fusion of frontend elegance and backend robustness, delivering innovative, holistic digital solutions for enhanced user experiences and advanced functionality.                                                </p>
+                                                    Seamless fusion of frontend elegance and backend robustness, delivering innovative, holistic digital solutions for enhanced user experiences and advanced functionality.                                                </p>
                                             </div>
                                         </div>
 
                                         <div className='rounded-full bg-primaryColor border-white border-4 w-10 h-10 absolute left-1/2 
                                         transform -translate-x-1/2 -translate-y-4 sm:translate-y-0 flex items-center justify-center'>
                                             <figure>
-                                                <img src={appsImg} alt="" />
+                                                <img src={appsImg} alt="Mobile App Development" />
                                             </figure>
                                         </div>
                                     </div>

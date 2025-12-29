@@ -29,8 +29,8 @@ const Footer = () => {
                 Follow Me:
               </span>
               {
-                links.map(({ link, style }) => (
-                  <span className="w-[35px] h-[35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center">
+                links.map(({ link, style }, index) => (
+                  <span key={index} className="w-[35px] h-[35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center">
                     <a href={link} className="text-gray-300 font-[500] text-[18px]">
                       <i className={style}></i>
                     </a>
@@ -43,8 +43,8 @@ const Footer = () => {
         <div>
           <ul className='flex items-center justify-center gap-10 mt-10'>
             {
-              menuItems.map(({ url, display }) => (
-                <li >
+              menuItems.map(({ url, display }, index) => (
+                <li key={index}>
                   <a className='text-gray-400 font-[600]' href={url}>{display}</a>
                 </li>
               ))

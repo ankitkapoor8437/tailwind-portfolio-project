@@ -7,7 +7,7 @@ import counters from '../../assets/data/counterDetails';
 
 const Hero = () => {
     return (
-        <section className='pt-0 id="about'>
+        <section className='pt-0' id="about">
             <div className='container pt-14'>
                 <div className='md:flex items-center justify-between  sm:flex-col md:flex-row'>
                     {/* Left Section */}
@@ -32,7 +32,7 @@ const Hero = () => {
                                 See Portfolio
                             </a>
                         </div>
-                        <p className='flex gap-2 text-headingColor font-[500] mt-12 start
+                        <p className='flex gap-2 text-headingColor font-[500] mt-12 
                          text-[15px] leading-7  sm:pr-10 '
                             data-aos='fade-up' data-aos-duration='1800'  >
                             <span>
@@ -47,8 +47,8 @@ const Hero = () => {
                                 Follow me:
                             </span>
                             {
-                                links.map(({ link, style }) => (
-                                    <span >
+                                links.map(({ link, style }, index) => (
+                                    <span key={index}>
                                         <a href={link} target="_blank" rel="noopener noreferrer" className='text-smallTextColor text-[20px] font-[600]'>
                                             <i className={style}></i>
                                         </a>
@@ -61,7 +61,7 @@ const Hero = () => {
 
 
                     {/* Image Section */}
-                    <div className='basis-1/3 mt-10 sm:mt-0'> 
+                    <div className='basis-1/3 mt-10 sm:mt-0'>
                         <figure className='flex items-center justify-center  rounded-lg shadow-lg shadow-[#8873ef]	'>
                             <img className=" rounded-lg" src={heroImage} alt="" />
                         </figure>
@@ -70,8 +70,8 @@ const Hero = () => {
                     {/* Content Section */}
                     <div className='md:basis-1/5 flex justify-between text-center mt-10 flex-wrap gap-3 md:mt-0 md:flex-col md:justify-end md:text-end'>
                         {
-                            counters.map(({ display, start, end, suffix }) => (
-                                <div className='mb-10'>
+                            counters.map(({ display, start, end, suffix }, index) => (
+                                <div className='mb-10' key={index}>
                                     <h2 className='text-headingColor font-[700] text-[32px]'>
                                         <CountUp start={start} end={end} duration={3} suffix={suffix} />
                                     </h2>
