@@ -1,30 +1,28 @@
-import React from 'react'
+const About = () => (
+  <section className="section" id="about" aria-labelledby="about-title">
+    <div className="container about-grid">
+      <div className="section-heading">
+        <span className="section-index">01 / About</span>
+        <h2 id="about-title">Engineering useful intelligence.</h2>
+      </div>
+      <div className="about-copy">
+        <p className="body-copy">
+          I build and ship AI-enabled products, from retrieval-augmented generation and
+          agent workflows to APIs and interfaces teams use every day. My work spans applied
+          AI, backend platform engineering, and full-stack product development.
+        </p>
+        <p className="body-copy">
+          I currently work at Fractal AI. Previously, at Network18, I worked on products
+          that bring AI into editorial and analytics workflows. Before that, I built APIs
+          and customer-facing features for a distribution CRM at Pantheon India.
+        </p>
+        <div className="impact-card">
+          <strong className="impact-value">10M+</strong>
+          <p>Documents served by RAG pipelines built with embeddings, metadata, and vector databases.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+);
 
-
-const aboutDetails = [
-    {
-        heading: "About me",
-        subHeading: `I'm a web developer based in Punjab, originally from Himachal Pradesh. When I'm not coding, you can find me playing the guitar, listening to music, traveling, watching anime, and reading about history. I also love exploring new cafes and trying different cuisines, and weekend getaways are always on my list. My hobbies keep me inspired and help me bring a fresh perspective to my work.
-        `,
-    }
-]
-
-const About = () => {
-    return (
-        <section id='about'>
-            <div className='container lg:pt-5'>
-                <div className='text-center'>
-                    <h2 className='text-headingColor font-[800] text-[2.4rem] mb-5'>
-                        {aboutDetails[0].heading}
-                    </h2>
-                    <p className='lg:max-w-[800px] lg:mx-auto text-headingColor font-[500] text-[16px] leading-7'>
-                        {/* lg:mx-auto */}
-                        {aboutDetails[0].subHeading}
-                    </p>
-                </div>
-            </div>
-        </section>
-    )
-}
-
-export default About
+export default About;
