@@ -769,7 +769,7 @@ button {
 
 .contact-panel {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 40px;
   padding: clamp(28px, 6vw, 56px);
@@ -778,6 +778,10 @@ button {
   background:
     radial-gradient(ellipse at 85% 20%, rgba(85, 152, 243, 0.18), transparent 36%),
     linear-gradient(120deg, #0e253a, #0a1b2a);
+}
+
+.contact-copy {
+  flex: 0 1 390px;
 }
 
 .contact-panel h2 {
@@ -808,6 +812,91 @@ button {
   flex: 0 0 auto;
   justify-items: start;
   gap: 10px;
+}
+
+.contact-form {
+  display: grid;
+  flex: 1 1 500px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.form-field {
+  display: grid;
+  gap: 7px;
+}
+
+.form-field:nth-child(3),
+.form-field:nth-child(4),
+.form-status {
+  grid-column: 1 / -1;
+}
+
+.form-field label {
+  color: #c4d3e2;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  outline: none;
+  color: var(--text);
+  background: rgba(7, 21, 34, 0.7);
+  font: inherit;
+  font-size: 13px;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.form-field textarea {
+  min-height: 104px;
+  resize: vertical;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(130, 184, 255, 0.12);
+}
+
+.form-field input:disabled,
+.form-field textarea:disabled {
+  opacity: 0.7;
+}
+
+.form-submit {
+  justify-self: start;
+  cursor: pointer;
+}
+
+.form-submit:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.form-status {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.form-status--success {
+  color: #84deb0;
+}
+
+.form-status--error {
+  color: #ffb2a8;
+}
+
+.form-status a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .contact-side .button {
@@ -988,8 +1077,19 @@ button {
     gap: 28px;
   }
 
-  .contact-side {
+  .contact-copy,
+  .contact-form {
     width: 100%;
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-field:nth-child(3),
+  .form-field:nth-child(4),
+  .form-status {
+    grid-column: auto;
   }
 }
 

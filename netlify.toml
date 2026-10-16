@@ -4,3 +4,4 @@
 
 [build.environment]
   NODE_VERSION = "22.12.0"
+  VITE_CONTACT_API_URL = "https://portfolio-backend-qkhk.onrender.com"

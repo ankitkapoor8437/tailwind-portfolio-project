@@ -13,7 +13,7 @@ const Header = () => {
           <span className="brand-mark" aria-hidden="true">AK</span>
           <span className="brand-copy">
             <strong>Ankit Kapoor</strong>
-            <span>SOFTWARE ENGINEER</span>
+            <span>AI/ML ENGINEER</span>
           </span>
         </a>
 
