@@ -85,11 +85,12 @@ export const projects = [
   },
   {
     title: 'Movie Review Sentiment Analysis',
-    category: 'Natural language processing',
+    category: 'Client-side review · NLP classifier',
     description:
-      'An NLP sentiment model trained on 70K IMDb reviews, with a Python and Flask backend and Django frontend, deployed on Heroku.',
-    technologies: ['Python', 'Flask', 'Django', 'NLP', 'Heroku'],
+      'A Flask web app that classifies submitted movie reviews as positive or negative using a saved scikit-learn model trained on 70K IMDb reviews.',
+    technologies: ['Python', 'Flask', 'scikit-learn', 'NLP', 'Render'],
     visual: 'sentiment',
+    liveUrl: 'https://movie-review-system-flask.onrender.com/',
   },
   {
     title: 'Personal Portfolio',
