@@ -1,6 +1,18 @@
 import { projects } from '../../assets/data/resumeData';
 
 const ProjectPreview = ({ visual }) => {
+  if (visual === 'nagform') {
+    return (
+      <div className="project-preview" aria-hidden="true">
+        <span className="mono-label">NAGFORM-AI</span>
+        <span className="preview-line">
+          <i className="ri-search-line" />
+          knowledge · search · answers
+        </span>
+      </div>
+    );
+  }
+
   if (visual === 'sentiment') {
     return (
       <div className="project-preview" aria-hidden="true">
@@ -29,7 +41,7 @@ const Portfolio = () => (
       <div className="section-heading">
         <span className="section-index">03 / Selected projects</span>
         <h2 id="projects-title">A few things I&apos;ve built.</h2>
-        <p>Personal projects exploring retrieval, language technology, and full-stack product development.</p>
+        <p>Selected client and personal work across AI-powered knowledge tools, language technology, and full-stack development.</p>
       </div>
 
       <div className="project-grid">
@@ -42,7 +54,7 @@ const Portfolio = () => (
               <span className="mono-label">{category}</span>
               <h3>{title}</h3>
               <p>{description}</p>
-              <div className="tag-list" aria-label={`${title} technologies`}>
+              <div className="tag-list" aria-label={`${title} focus areas`}>
                 {technologies.map((technology) => (
                   <span className="tag" key={technology}>{technology}</span>
                 ))}

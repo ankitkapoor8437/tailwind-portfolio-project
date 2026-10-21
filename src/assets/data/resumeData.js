@@ -67,6 +67,15 @@ export const experience = [
 
 export const projects = [
   {
+    title: 'NAGFORM-AI Knowledgebase',
+    category: 'Client project · AI knowledge management',
+    description:
+      'A knowledge-base management tool that helps teams turn organizational knowledge into a searchable resource, with AI-powered natural-language search and recommendations.',
+    technologies: ['AI-powered search', 'Knowledge management', 'Client project'],
+    visual: 'nagform',
+    liveUrl: 'https://knbase.netlify.app/',
+  },
+  {
     title: 'RAG-based Knowledge Base',
     category: 'Retrieval-augmented generation',
     description:

@@ -602,6 +602,12 @@ button {
     linear-gradient(145deg, #15263e, #10283a);
 }
 
+.project-visual--nagform {
+  background:
+    radial-gradient(circle at 28% 30%, rgba(66, 93, 255, 0.24), transparent 34%),
+    linear-gradient(145deg, #111632, #0b1d2d);
+}
+
 .project-visual--portfolio {
   background:
     radial-gradient(circle at 70% 70%, rgba(85, 152, 243, 0.17), transparent 35%),
